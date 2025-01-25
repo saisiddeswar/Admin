@@ -1,0 +1,33 @@
+/* EditProfile.css */
+.edit-profile-modal .modal-content {
+    border-radius: 10px;
+  }
+  
+  .edit-profile-modal .modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .edit-profile-modal .modal-body {
+    padding: 20px;
+  }
+  
+  .edit-profile-modal .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .edit-profile-modal .form-control {
+    border-radius: 5px;
+  }
+  
+  .edit-profile-modal .btn-primary {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .edit-profile-modal .btn-primary:hover {
+    background-color: #0056b3;
+  }

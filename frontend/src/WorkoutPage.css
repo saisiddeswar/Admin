@@ -1,0 +1,172 @@
+/* Workout Page Container */
+.workout-page {
+    padding: 20px;
+    font-family: 'Georgia', serif; /* Classic serif font */
+    background: #0a0f1a; /* Dark navy background */
+    min-height: 100vh;
+    color: #f4f4f4; /* Light text color */
+  }
+  
+  /* Section Headings */
+  h1, h2 {
+    color: #d4af37; /* Gold color for headings */
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-top: 40px;
+  }
+  
+  /* Exercise Container */
+  .exercise-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  
+  /* Exercise Cards */
+  .exercise-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #d4af37; /* Gold border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  }
+  
+  /* Dark Royal Card Colors */
+  .exercise-card:nth-child(1) {
+    background: linear-gradient(135deg, #800020, #4a0010); /* Burgundy */
+  }
+  
+  .exercise-card:nth-child(2) {
+    background: linear-gradient(135deg, #0a0f1a, #1e3a5f); /* Navy */
+  }
+  
+  .exercise-card:nth-child(3) {
+    background: linear-gradient(135deg, #1a472a, #0d2818); /* Forest Green */
+  }
+  
+  .exercise-card:nth-child(4) {
+    background: linear-gradient(135deg, #2c3e50, #1c2833); /* Charcoal */
+  }
+  
+  .exercise-card:nth-child(5) {
+    background: linear-gradient(135deg, #4b0082, #2e0041); /* Indigo */
+  }
+  
+  .exercise-card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+    box-shadow: 0 8px 16px rgba(212, 175, 55, 0.5); /* Gold shadow on hover */
+  }
+  
+  .exercise-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff; /* White text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for text */
+  }
+  
+  /* Popup Overlay */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 15, 26, 0.9); /* Dark navy with transparency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Popup Content */
+  .popup-content {
+    background: #1e3a5f; /* Navy background */
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease; /* Smooth fade-in animation */
+    border: 2px solid #d4af37; /* Gold border */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .popup-content h2 {
+    margin-top: 0;
+    color: #d4af37; /* Gold color for heading */
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for text */
+  }
+  
+  .popup-content p {
+    font-size: 1.1rem;
+    color: #f4f4f4; /* Light text color */
+    margin-bottom: 10px;
+  }
+  
+  .popup-content ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #f4f4f4; /* Light text color */
+  }
+  
+  .popup-content button {
+    background-color: #d4af37; /* Gold button */
+    color: #1e3a5f; /* Navy text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto 0;
+  }
+  
+  .popup-content button:hover {
+    background-color: #b5942e; /* Darker gold on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .exercise-container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .exercise-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
